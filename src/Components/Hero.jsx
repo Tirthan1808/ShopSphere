@@ -9,6 +9,9 @@ export default function Hero() {
                     <h1>heading1</h1>
                     <h2>heading2</h2>
                     <h3>heading3</h3>
+                    <h4>heading4
+                        
+                    </h4>
                 </div>
             </section>
         </div>
