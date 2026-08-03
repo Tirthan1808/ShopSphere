@@ -13,6 +13,7 @@ export default function Hero() {
                     <h5>heading5</h5>
                     <h6>heading6</h6>
                     <h1>heading7</h1>
+                    <h1>heading7</h1>
                 </div>
             </section >
         </div >
