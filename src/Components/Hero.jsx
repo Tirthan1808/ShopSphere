@@ -5,6 +5,7 @@ const CATEGORIES = ['Fashion', 'Tech', 'Home', 'Beauty', 'Sports', 'Kids']
 
 export default function Hero() {
     return (
+<<<<<<< HEAD
         <section className="hero">
             <div className="hero-inner">
                 <div className="hero-copy">
@@ -45,6 +46,20 @@ export default function Hero() {
                             <dd>2.1M</dd>
                         </div>
                     </dl>
+=======
+        <div className="container">
+            <section>
+                <div className="container4">
+                    <h1>heading1</h1>
+                    <h2>heading2</h2>
+                    <h3>heading3</h3>
+                    <h4>heading4</h4>
+                    <h5>heading5</h5>
+                    <h6>heading6</h6>
+                    <h1>heading7</h1>
+                    <h2>heading8</h2>
+                    <h3>heading9</h3>
+>>>>>>> 6536f28700a6abf74227507dbe14b103a1e0a5c0
                 </div>
 
                 <div className="hero-visual" aria-hidden="true">
