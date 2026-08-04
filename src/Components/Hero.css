@@ -122,15 +122,16 @@
 .hero-visual {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    min-height: 380px;
+    height: 100%;
 }
 
 .orbit-system {
     position: relative;
     width: 340px;
     height: 340px;
+    flex-shrink: 0;
 }
 
 .orbit-core {
@@ -213,6 +214,7 @@
     .hero-visual {
         min-height: 300px;
         order: -1;
+        justify-content: center;
     }
 
     .orbit-system {
