@@ -39,7 +39,7 @@ export default function Navbar() {
                     {/* Right Side Actions */}
                     <div className="desktop-action">
 
-
+<SearchBar />
                         {/* Cart */}
                         <Link to="/cart" className="cart-icon">
                             <i className="fa-solid fa-cart-shopping"></i>

@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
-import SearchBar from './Components/SearchBar';
+// import SearchBar from './Components/SearchBar';
 // import ProductCard from './Components/ProductCard';
 
 import AddProduct from './Pages/Admin/AddProduct';
@@ -32,7 +32,7 @@ root.render(
       <div className="app">
 
         <Navbar />
-        <SearchBar />
+        
 
 
         <main className="main-content">
