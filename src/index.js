@@ -8,8 +8,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
-// import SearchBar from './Components/SearchBar';
-// import ProductCard from './Components/ProductCard';
 
 import AddProduct from './Pages/Admin/AddProduct';
 import Categories from './Pages/Admin/Categories';
@@ -32,7 +30,7 @@ root.render(
       <div className="app">
 
         <Navbar />
-        
+
 
 
         <main className="main-content">
@@ -50,7 +48,6 @@ root.render(
             <Route path="/admin/users" element={<Users />} />
           </Routes>
 
-          {/* <ProductCard></ProductCard> */}
 
         </main>
 
