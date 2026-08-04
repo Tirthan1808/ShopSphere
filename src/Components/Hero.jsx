@@ -7,47 +7,47 @@ export default function Hero() {
     return (
 
         <section className="hero">
-          
-                <div className="hero-copy">
-                    <p className="hero-eyebrow">Global marketplace · one orbit</p>
 
-                    <h1 className="hero-heading">
-                        Every shop.
-                        <br />
-                        One sphere.
-                    </h1>
+            <div className="hero-copy">
+                <p className="hero-eyebrow">Global marketplace · one orbit</p>
 
-                    <p className="hero-subheading">
-                        ShopSphere pulls thousands of independent sellers into a single
-                        storefront, so you check out once no matter how many shops you
-                        bought from.
-                    </p>
+                <h1 className="hero-heading">
+                    Every shop.
+                    <br />
+                    One sphere.
+                </h1>
 
-                    <div className="hero-cta-group">
-                        <a href="#shop" className="btn btn-primary">
-                            Start shopping
-                        </a>
-                        <a href="#how-it-works" className="btn btn-ghost">
-                            How it works
-                        </a>
+                <p className="hero-subheading">
+                    ShopSphere pulls thousands of independent sellers into a single
+                    storefront, so you check out once no matter how many shops you
+                    bought from.
+                </p>
+
+                <div className="hero-cta-group">
+                    <a href="#shop" className="btn btn-primary">
+                        Stop shopping
+                    </a>
+                    <a href="#how-it-works" className="btn btn-ghost">
+                        How it works
+                    </a>
+                </div>
+
+                <dl className="hero-stats">
+                    <div className="stat">
+                        <dt>Sellers</dt>
+                        <dd>12,400+</dd>
                     </div>
-
-                    <dl className="hero-stats">
-                        <div className="stat">
-                            <dt>Sellers</dt>
-                            <dd>12,400+</dd>
-                        </div>
-                        <div className="stat">
-                            <dt>Countries</dt>
-                            <dd>63</dd>
-                        </div>
-                        <div className="stat">
-                            <dt>Items listed</dt>
-                            <dd>2.1M</dd>
-                        </div>
-                    </dl>
+                    <div className="stat">
+                        <dt>Countries</dt>
+                        <dd>63</dd>
+                    </div>
+                    <div className="stat">
+                        <dt>Items listed</dt>
+                        <dd>2.1M</dd>
+                    </div>
+                </dl>
 =======
-        
+
 
                 <div className="hero-visual" aria-hidden="true">
                     <div className="orbit-system">
