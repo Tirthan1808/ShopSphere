@@ -5,9 +5,9 @@ import reportWebVitals from "./reportWebVitals"; // perf logging (standalone)
 import { BrowserRouter, Routes, Route } from "react-router-dom"; // routing
 
 // Layout components - shown on every page (outside <Routes>)
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Hero from './Components/Hero';
 // import SearchBar from './Components/SearchBar';
 // import ProductCard from './Components/ProductCard';
 
@@ -32,7 +32,11 @@ root.render(
       {" "}
       {/* enables routing for whole app */}
       <div className="app">
-        <Navbar /> {/* always visible */}
+
+        <Navbar />
+        
+
+
         <main className="main-content">
           <Hero /> {/* always visible */}
           {/* only the matching Route's element renders */}
@@ -48,7 +52,9 @@ root.render(
             <Route path="/admin/settings" element={<Settings />} />
             <Route path="/admin/users" element={<Users />} />
           </Routes>
+
           {/* <ProductCard></ProductCard> */}
+
         </main>
         <Footer /> {/* always visible */}
       </div>
