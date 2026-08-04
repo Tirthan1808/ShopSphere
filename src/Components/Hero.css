@@ -1,4 +1,231 @@
-.container4 {
-    background-color: #3d2f2f;
-    margin-top: 80px;
+.hero {
+    --ink: #0e2a28;
+    --ink-deep: #081a19;
+    --paper: #f3ede0;
+    --mustard: #e8a33d;
+    --coral: #f2785c;
+    --peach: #f4c9a6;
+    --text-soft: #dcedea;
+    --text-muted: #9fc2be;
+
+    background: radial-gradient(circle at 78% 20%, var(--ink-deep) 0%, var(--ink) 60%);
+    color: var(--paper);
+    padding: 6rem 2rem;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    overflow: hidden;
+}
+
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mustard);
+    margin: 0 0 1.25rem;
+}
+
+.hero-heading {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.75rem, 5vw, 4.25rem);
+    line-height: 1.05;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.hero-subheading {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+    max-width: 34rem;
+    margin: 0 0 2.25rem;
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.85rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--peach);
+    outline-offset: 3px;
+}
+
+.btn-primary {
+    background: var(--coral);
+    color: var(--ink-deep);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background: var(--mustard);
+}
+
+.btn-ghost {
+    border: 1px solid rgba(243, 237, 224, 0.35);
+    color: var(--paper);
+}
+
+.btn-ghost:hover {
+    border-color: var(--paper);
+    transform: translateY(-2px);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(243, 237, 224, 0.15);
+}
+
+.stat dt {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+}
+
+.stat dd {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--paper);
+}
+
+/* --- Orbit signature --- */
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 380px;
+}
+
+.orbit-system {
+    position: relative;
+    width: 340px;
+    height: 340px;
+}
+
+.orbit-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 108px;
+    height: 108px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--peach), var(--coral) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 60px rgba(242, 120, 92, 0.35);
+}
+
+.orbit-core-label {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--ink-deep);
+}
+
+.orbit-ring {
+    position: absolute;
+    inset: 0;
+    animation: spin 22s linear infinite;
+}
+
+.orbit-pill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:
+        rotate(calc(360deg / var(--n) * var(--i)))
+        translate(158px)
+        rotate(calc(-360deg / var(--n) * var(--i)));
+    background: rgba(243, 237, 224, 0.08);
+    border: 1px solid rgba(243, 237, 224, 0.25);
+    color: var(--paper);
+    font-size: 0.8rem;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    backdrop-filter: blur(2px);
+}
+
+.orbit-system:hover .orbit-ring {
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orbit-ring {
+        animation: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-cta-group,
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 300px;
+        order: -1;
+    }
+
+    .orbit-system {
+        width: 260px;
+        height: 260px;
+    }
+
+    .orbit-pill {
+        transform:
+            rotate(calc(360deg / var(--n) * var(--i)))
+            translate(118px)
+            rotate(calc(-360deg / var(--n) * var(--i)));
+        font-size: 0.7rem;
+        padding: 0.35rem 0.7rem;
+    }
 }
