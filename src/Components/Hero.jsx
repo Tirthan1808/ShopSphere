@@ -24,7 +24,7 @@ export default function Hero() {
 
                 <div className="hero-cta-group">
                     <a href="#shop" className="btn btn-primary">
-                        Stop shopping
+                        Start shopping
                     </a>
                     <a href="#how-it-works" className="btn btn-ghost">
                         How it works
