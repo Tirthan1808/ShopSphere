@@ -5,7 +5,6 @@ const CATEGORIES = ['Fashion', 'Tech', 'Home', 'Beauty', 'Sports', 'Kids']
 
 export default function Hero() {
     return (
-
         <section className="hero">
 
             <div className="hero-copy">
@@ -25,7 +24,7 @@ export default function Hero() {
 
                 <div className="hero-cta-group">
                     <a href="#shop" className="btn btn-primary">
-                        Start shopping
+                        Stop shopping
                     </a>
                     <a href="#how-it-works" className="btn btn-ghost">
                         How it works
@@ -46,28 +45,27 @@ export default function Hero() {
                         <dd>2.1M</dd>
                     </div>
                 </dl>
-=======
+            </div>
 
-
-                <div className="hero-visual" aria-hidden="true">
-                    <div className="orbit-system">
-                        <div className="orbit-core">
-                            <span className="orbit-core-label">SS</span>
-                        </div>
-                        <div className="orbit-ring">
-                            {CATEGORIES.map((cat, i) => (
-                                <span
-                                    className="orbit-pill"
-                                    key={cat}
-                                    style={{ '--i': i, '--n': CATEGORIES.length }}
-                                >
-                                    {cat}
-                                </span>
-                            ))}
-                        </div>
+            <div className="hero-visual" aria-hidden="true">
+                <div className="orbit-system">
+                    <div className="orbit-core">
+                        <span className="orbit-core-label">SS</span>
+                    </div>
+                    <div className="orbit-ring">
+                        {CATEGORIES.map((cat, i) => (
+                            <span
+                                className="orbit-pill"
+                                key={cat}
+                                style={{ '--i': i, '--n': CATEGORIES.length }}
+                            >
+                                {cat}
+                            </span>
+                        ))}
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }
