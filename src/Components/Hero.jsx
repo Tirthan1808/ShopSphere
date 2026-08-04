@@ -14,6 +14,7 @@ export default function Hero() {
                     <h6>heading6</h6>
                     <h1>heading7</h1>
                     <h2>heading8</h2>
+                    <h3>heading9</h3>
                 </div>
             </section >
         </div >
