@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Hero from './Components/Hero';
+import SearchBar from './Components/SearchBar';
 // import ProductCard from './Components/ProductCard';
 
 import AddProduct from './Pages/Admin/AddProduct';
@@ -19,8 +21,6 @@ import Reports from './Pages/Admin/Reports';
 import Reviews from './Pages/Admin/Reviews';
 import Settings from './Pages/Admin/Settings';
 import Users from './Pages/Admin/Users';
-import Hero from './Components/Hero';
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,9 +32,10 @@ root.render(
       <div className="app">
 
         <Navbar />
+        <SearchBar />
+
 
         <main className="main-content">
-
           <Hero />
           <Routes>
             <Route path="/admin/add-product" element={<AddProduct />} />
