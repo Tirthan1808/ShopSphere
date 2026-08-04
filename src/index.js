@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import './index.css'; // global styles
+import reportWebVitals from './reportWebVitals'; // perf logging (standalone)
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // routing
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+// Layout components - shown on every page (outside <Routes>)
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 // import SearchBar from './Components/SearchBar';
 // import ProductCard from './Components/ProductCard';
 
+// Admin pages - each rendered only when URL matches its <Route path>
 import AddProduct from './Pages/Admin/AddProduct';
 import Categories from './Pages/Admin/Categories';
 import Dashboard from './Pages/Admin/Dashboard';
@@ -22,21 +23,18 @@ import Reviews from './Pages/Admin/Reviews';
 import Settings from './Pages/Admin/Settings';
 import Users from './Pages/Admin/Users';
 
-
+// Mount app into <div id="root"> from index.html
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-
+    <BrowserRouter> {/* enables routing for whole app */}
       <div className="app">
-
-        <Navbar />
-        
-
-
+        <Navbar /> {/* always visible */}
         <main className="main-content">
-          <Hero />
+          <Hero /> {/* always visible */}
+
+          {/* only the matching Route's element renders */}
           <Routes>
             <Route path="/admin/add-product" element={<AddProduct />} />
             <Route path="/admin/categories" element={<Categories />} />
@@ -49,15 +47,10 @@ root.render(
             <Route path="/admin/settings" element={<Settings />} />
             <Route path="/admin/users" element={<Users />} />
           </Routes>
-
           {/* <ProductCard></ProductCard> */}
-
         </main>
-
-        <Footer />
-
+        <Footer /> {/* always visible */}
       </div>
-
     </BrowserRouter>
   </React.StrictMode>
 );
