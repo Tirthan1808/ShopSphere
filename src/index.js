@@ -1,31 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css'; // global styles
-import reportWebVitals from './reportWebVitals'; // perf logging (standalone)
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // routing
 
-// Layout components - shown on every page (outside <Routes>)
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import Hero from './Components/Hero';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-// Admin pages - each rendered only when URL matches its <Route path>
-import AddProduct from './Pages/Admin/AddProduct';
-import Categories from './Pages/Admin/Categories';
-import Dashboard from './Pages/Admin/Dashboard';
-import EditProduct from './Pages/Admin/EditProduct';
-import Orders from './Pages/Admin/Orders';
-import Products from './Pages/Admin/Products';
-import Reports from './Pages/Admin/Reports';
-import Reviews from './Pages/Admin/Reviews';
-import Settings from './Pages/Admin/Settings';
-import Users from './Pages/Admin/Users';
-
-// Mount app into <div id="root"> from index.html
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(
+  document.getElementById("root")
+);
 
 root.render(
   <React.StrictMode>
+<<<<<<< HEAD
     <BrowserRouter> {/* enables routing for whole app */}
       <div className="app">
 
@@ -54,7 +40,11 @@ root.render(
         <Footer /> {/* always visible */}
       </div>
     </BrowserRouter>
+=======
+    <App />
+>>>>>>> 5baee4cec83ae8e448f78dcff1a6631190e7cc4f
   </React.StrictMode>
 );
 
 reportWebVitals();
+
