@@ -95,13 +95,14 @@ export default function Hero() {
 
             </div>
 
-            <div>
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-            </div>
+           <h2>Featured Products</h2>
 
+        <div className="product-grid">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+        </div>
         </section>
     )
 }
