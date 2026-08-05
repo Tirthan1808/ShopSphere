@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './Hero.css'
+import ProductCard from './ProductCard'
 
 const CATEGORIES = ['Fashion', 'Tech', 'Home', 'Beauty', 'Sports', 'Kids']
 
@@ -60,7 +61,6 @@ export default function Hero() {
 
                 </div>
 
-
                 {/* RIGHT SIDE - ORBIT */}
                 <div className="hero-visual" aria-hidden="true">
 
@@ -93,6 +93,13 @@ export default function Hero() {
 
                 </div>
 
+            </div>
+
+            <div>
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
             </div>
 
         </section>

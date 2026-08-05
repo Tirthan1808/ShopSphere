@@ -30,7 +30,7 @@ root.render(
       <div className="app">
 
         <Navbar />
-        
+
 
 
         <main className="main-content">
@@ -49,8 +49,6 @@ root.render(
             <Route path="/admin/settings" element={<Settings />} />
             <Route path="/admin/users" element={<Users />} />
           </Routes>
-
-          {/* <ProductCard></ProductCard> */}
 
         </main>
         <Footer /> {/* always visible */}
