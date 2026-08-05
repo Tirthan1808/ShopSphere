@@ -93,8 +93,10 @@ function App() {
 
           </Routes>
 
-          {/* Product Card */}
-          <ProductCard />
+          
+
+
+
 
         </main>
 
