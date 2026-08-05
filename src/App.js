@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 
 // Components
-import ProductCard from "./Components/ProductCard";
+
 
 // Admin pages
 import AddProduct from "./Pages/Admin/AddProduct";

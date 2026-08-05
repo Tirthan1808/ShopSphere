@@ -95,8 +95,8 @@ export default function Hero() {
 
             </div>
 
-           <h2>Featured Products</h2>
 
+           <h2 id="featured-products">Featured Products</h2>
         <div className="product-grid">
             <ProductCard />
             <ProductCard />
