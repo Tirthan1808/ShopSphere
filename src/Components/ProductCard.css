@@ -1,8 +1,8 @@
 .ProductCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 /* Card */
@@ -11,7 +11,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 300px;
     height: 300px;
 
