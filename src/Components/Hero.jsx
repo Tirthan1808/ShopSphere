@@ -34,7 +34,7 @@ export default function Hero() {
                         <a href="#shop" className="btn btn-primary">
                             Start shopping
                         </a>
-
+        
                         <a href="#how-it-works" className="btn btn-ghost">
                             How it works
                         </a>
